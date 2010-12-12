@@ -1,7 +1,35 @@
+$cover_width: 200px;
+$cover_height: 250px;
+
+@font-face {
+  font-family: Danley;
+  src: url(Danley.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: LuxiSans;
+  src: url(LuxiSans.ttf) format("truetype");
+}
+
+@mixin box_shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+}
+
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+  
+
 #container {
   text-align: center;
   height: auto;
   position: relative;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10pt;
 }
 
 ul.mediaList {
@@ -10,18 +38,27 @@ ul.mediaList {
   li.mediaEntry {
     display: inline-block;
     width: 240px;
-    height: 270px;
-    border: solid 1px;
     height: auto;
-    padding: 5px;
+    padding: 0px 5px 10px 5px;
     text-align: center;
     position: relative;
-    margin-top: 10px;
+    margin-top: 5px;
+    @include rounded;
+    font-size: 1.5em;
 
-    h6 {
-      font-size: 0.9em;
+    &:hover {
+      @include box_shadow(0, 0, 10px, gray);
+    }
+
+    h5 {
       height: auto;
       padding: 0px;
+      font-family: "LuxiSans";
+    }
+
+    img.mediaCover {
+      width: 200px;
+      height: 250px;
     }
   }
 

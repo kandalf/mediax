@@ -1,21 +1,40 @@
+@font-face {
+  font-family: Danley;
+  src: url(Danley.ttf) format("truetype"); }
+
+@font-face {
+  font-family: LuxiSans;
+  src: url(LuxiSans.ttf) format("truetype"); }
+
 #container {
   text-align: center;
   height: auto;
-  position: relative; }
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10pt; }
 
 ul.mediaList {
   list-style: none; }
   ul.mediaList li.mediaEntry {
     display: inline-block;
     width: 240px;
-    height: 270px;
-    border: solid 1px;
     height: auto;
-    padding: 5px;
+    padding: 0px 5px 10px 5px;
     text-align: center;
     position: relative;
-    margin-top: 10px; }
-    ul.mediaList li.mediaEntry h6 {
-      font-size: 0.9em;
+    margin-top: 5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    font-size: 1.5em; }
+    ul.mediaList li.mediaEntry:hover {
+      box-shadow: 0 0 10px gray;
+      -webkit-box-shadow: 0 0 10px gray;
+      -moz-box-shadow: 0 0 10px gray; }
+    ul.mediaList li.mediaEntry h5 {
       height: auto;
-      padding: 0px; }
+      padding: 0px;
+      font-family: "LuxiSans"; }
+    ul.mediaList li.mediaEntry img.mediaCover {
+      width: 200px;
+      height: 250px; }

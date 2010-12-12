@@ -1,6 +1,6 @@
 %ul.mediaList
   -@media_entries.each do |entry|
     %li.mediaEntry
-      %h6= entry[:name]
-      %img.mediaCover{ :src => entry[:cover], :width => "200", :height => "250" } 
+      %h5= entry[:name]
+      %img.mediaCover{ :src => entry[:cover] } 
           
