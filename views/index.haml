@@ -1,0 +1,8 @@
+%ul.movieList
+  -@movies.each do |movie|
+    %li.movie
+      %span
+        %img{ :src => movie[:cover], :width => "100", :height => "150" } 
+      %span
+        %h6= movie[:name]
+          
