@@ -1,0 +1,28 @@
+#container {
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+ul.mediaList {
+  list-style: none;
+
+  li.mediaEntry {
+    display: inline-block;
+    width: 240px;
+    height: 270px;
+    border: solid 1px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+
+    h6 {
+      font-size: 0.9em;
+      height: auto;
+      padding: 0px;
+    }
+  }
+
+}
