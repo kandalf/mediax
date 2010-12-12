@@ -4,8 +4,8 @@ class DirParser
   EXCLUDE_DIRS  = %w". .."
   MEDIA_DIR    = "/mnt/darkstar/movies"
   THUMBS_DIR    = "./public/thumbs"
-  THUMBS_WIDHT  = 100
-  THUMBS_HEIGHT = 150
+  THUMBS_WIDHT  = 200
+  THUMBS_HEIGHT = 250
 
 
   def self.all

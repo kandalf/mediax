@@ -3,7 +3,7 @@ require './lib/dir_parser'
 class MediaList < Sinatra::Base
 
   get '/' do
-    @movies = DirParser.all
+    @media_entries = DirParser.all
 
     haml :index
   end

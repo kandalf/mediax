@@ -1,8 +1,8 @@
-%ul.movieList
-  -@movies.each do |movie|
-    %li.movie
+%ul.mediaList
+  -@media_entries.each do |entry|
+    %li.mediaEntry
       %span
-        %img{ :src => movie[:cover], :width => "100", :height => "150" } 
+        %img.mediaCover{ :src => entry[:cover], :width => "200", :height => "250" } 
       %span
-        %h6= movie[:name]
+        %h6= entry[:name]
           
