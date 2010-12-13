@@ -1,0 +1,31 @@
+MediaX
+======
+
+MediaX is a media index application.
+It reads a directory and presents it in a simple HTML page.
+The directory must follow a simple convention which is:
+media_root_directory
+ |_media_directory
+   |_any_number_of_files
+   |_cover.(png|jpg|gif|wathever)
+
+Mediax will walk the media_root_directory and create an entry for each media_directory within this.
+It will genenrate a thumbnail from the cover.(png|jpg|etc) file within each media_directory, and will assume the name of these directories as the media title.
+
+Example:
+movies
+ |_12 monkeys
+ |  |_cover.png
+ |_The mothman prophecies
+    |_cover.png
+
+Will get two entries:
+ - 12 monkeys
+ - The mothman prophecies
+
+Each one with its own thumbnail.
+
+Settings
+========
+Copy config/mediax_sample.yml to config/mediax.yml and specify your media directory 
+
