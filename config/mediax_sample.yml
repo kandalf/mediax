@@ -1,5 +1,5 @@
 media:
-  dir:  /mnt/darkstar/movies
+  dir:  /opt/movies
 
 thumbs:
   dir: ./public/thumbs
