@@ -1,11 +1,15 @@
 require 'mini_magick'
+require './lib/settings'
 
 class DirParser
+  
+  Settings.load("config/mediax.yml")
+
   EXCLUDE_DIRS  = %w". .."
-  MEDIA_DIR    = "/mnt/darkstar/movies"
-  THUMBS_DIR    = "./public/thumbs"
-  THUMBS_WIDHT  = 200
-  THUMBS_HEIGHT = 250
+  MEDIA_DIR     = Settings.settings["media"]["dir"]
+  THUMBS_DIR    = Settings.settings["thumbs"]["dir"]
+  THUMBS_WIDHT  = Settings.settings["thumbs"]["width"]
+  THUMBS_HEIGHT = Settings.settings["thumbs"]["height"]
 
 
   def self.all

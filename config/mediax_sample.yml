@@ -1,0 +1,7 @@
+media:
+  dir:  /mnt/darkstar/movies
+
+thumbs:
+  dir: ./public/thumbs
+  width: 200
+  height: 250
