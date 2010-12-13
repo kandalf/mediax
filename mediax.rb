@@ -1,6 +1,6 @@
 require './lib/dir_parser'
 
-class MediaList < Sinatra::Base
+class Mediax < Sinatra::Base
 
   get '/' do
     @media_entries = DirParser.all

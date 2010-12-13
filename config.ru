@@ -3,7 +3,7 @@ require 'sinatra'
 require 'haml'
 require 'sass'
 
-require './media_list'
+require './mediax'
 
 set :haml, :format => :html5
-run MediaList
+run Mediax
