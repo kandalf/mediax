@@ -6,6 +6,12 @@
   font-family: LuxiSans;
   src: url(LuxiSans.ttf) format("truetype"); }
 
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0f0616;
+  color: #c0c1cf; }
+
 #container {
   text-align: center;
   height: auto;
@@ -28,9 +34,9 @@ ul.mediaList {
     -moz-border-radius: 10px;
     font-size: 1.5em; }
     ul.mediaList li.mediaEntry:hover {
-      box-shadow: 0 0 10px gray;
-      -webkit-box-shadow: 0 0 10px gray;
-      -moz-box-shadow: 0 0 10px gray; }
+      box-shadow: 0 0 15px gray;
+      -webkit-box-shadow: 0 0 15px gray;
+      -moz-box-shadow: 0 0 15px gray; }
     ul.mediaList li.mediaEntry h5 {
       height: auto;
       padding: 0px;
