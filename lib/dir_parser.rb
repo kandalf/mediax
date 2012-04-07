@@ -37,6 +37,6 @@ class DirParser
       image.write thumb_file
     end
 
-    thumb_file.gsub(/\/public/, "")
+    thumb_file.gsub(/public\//, "")
   end
 end
